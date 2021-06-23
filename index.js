@@ -16,7 +16,7 @@ app.use(cors());
 // app.use(express.static('carRepairImg'));
 // app.use(fileUpload());
 
-const port = 5000;
+const port = 3011;
 
 
 app.get('/', (req, res) =>{
@@ -140,4 +140,4 @@ app.post('/isAdmin', (req, res) => {
 
 });
 
-app.listen(3011)
+app.listen( process.env.PORT || port );
